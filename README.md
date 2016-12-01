@@ -11,6 +11,18 @@ Summary: Python interface for the Cephes library
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ncephes-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ncephes-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/ncephes-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ncephes-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ncephes-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ncephes-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ncephes/badges/version.svg)](https://anaconda.org/conda-forge/ncephes)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ncephes/badges/downloads.svg)](https://anaconda.org/conda-forge/ncephes)
+
 Installing ncephes
 ==================
 
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ncephes-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ncephes-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ncephes-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ncephes-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ncephes-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ncephes-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ncephes/badges/version.svg)](https://anaconda.org/conda-forge/ncephes)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ncephes/badges/downloads.svg)](https://anaconda.org/conda-forge/ncephes)
 
 
 Updating ncephes-feedstock
