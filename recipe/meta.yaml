@@ -1,6 +1,6 @@
 {% set name = "ncephes" %}
-{% set version = "1.0.14" %}
-{% set sha256 = "389cae724a75df7dad30aae96134f4878df7c2c3a53491b421e1623987659639" %}
+{% set version = "1.0.15" %}
+{% set sha256 = "c75b05cabe71ca3e2283178d9ddc5159bd2fb3993bbcbcabb1c840433454f380" %}
 
 package:
   name: {{ name|lower }}
@@ -43,13 +43,13 @@ test:
     - python -c "import ncephes; ncephes.test()"
 
 about:
-  home: https://github.com/Horta/ncephes
+  home: https://github.com/glimix/ncephes
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: 'Python interface for the Cephes library'
   doc_url: http://ncephes.readthedocs.io
-  dev_url: https://github.com/Horta/ncephes
+  dev_url: https://github.com/glimix/ncephes
 
 extra:
   recipe-maintainers:
