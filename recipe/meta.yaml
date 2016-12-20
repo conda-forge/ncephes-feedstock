@@ -1,6 +1,6 @@
 {% set name = "ncephes" %}
-{% set version = "1.0.16" %}
-{% set sha256 = "c7753c85a3b165fe5dfb6179381db2cbb6a888b47dbe6426844b0efc4e96a7da" %}
+{% set version = "1.0.17" %}
+{% set sha256 = "a49e1316d6ec3fdbe23b3a9846623a1ecd8ed7a10514ea18a9bdc98869be4302" %}
 
 package:
   name: {{ name|lower }}
@@ -13,9 +13,9 @@ source:
 
 build:
   number: 0
-  skip: True           # [win and py<35]
+  skip: True  # [win and py<35]
   features:
-    - vc14             # [win]
+    - vc14  # [win]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -23,20 +23,21 @@ requirements:
     - python
     - setuptools
     - pytest-runner
-    - build_capi
-    - cffi
+    - build-capi
+    - cffi >=1.7
     - pycparser
     - toolchain
-    - vc 14           # [win]
+    - vc 14  # [win]
   run:
     - python
-    - cffi
+    - cffi >=1.7
+    - numba >=0.28
 
 test:
   requires:
-    - pytest
+    - pytest >=3
     - numpy
-    - numba
+    - numba >=0.28
   imports:
     - ncephes
   commands:
