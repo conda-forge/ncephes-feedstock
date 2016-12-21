@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 2
   skip: True  # [win and py<35]
   features:
     - vc14  # [win]
@@ -31,13 +31,11 @@ requirements:
   run:
     - python
     - cffi >=1.7
-    - numba >=0.28
 
 test:
   requires:
     - pytest >=3
     - numpy
-    - numba >=0.28
   imports:
     - ncephes
   commands:
