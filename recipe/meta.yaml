@@ -12,10 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win and py<35]
-  features:
-    - vc14  # [win]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -27,7 +25,6 @@ requirements:
     - cffi >=1.7
     - pycparser
     - toolchain
-    - vc 14  # [win]
   run:
     - python
     - cffi >=1.7
