@@ -1,6 +1,6 @@
 {% set name = "ncephes" %}
-{% set version = "1.0.21" %}
-{% set sha256 = "6e2aa6b59a5fbd9dbab401b5baef6341e7c3fbf9b0d7469c035e602f948ecc85" %}
+{% set version = "1.0.22" %}
+{% set sha256 = "2a000344cd6f96cfcc80c9ed2ad45f8ef76f04d012c5dd9fbada8c4441145870" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
   skip: True  # [win and py<35]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -36,16 +36,16 @@ test:
   imports:
     - ncephes
   commands:
-    - python -c "import ncephes; ncephes.test()"
+    - python -c "import sys; import ncephes; sys.exit(ncephes.test())"
 
 about:
-  home: https://github.com/glimix/ncephes
+  home: https://github.com/limix/ncephes
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: 'Python interface for the Cephes library'
-  doc_url: http://ncephes.readthedocs.io
-  dev_url: https://github.com/glimix/ncephes
+  doc_url: https://ncephes.readthedocs.io
+  dev_url: https://github.com/limix/ncephes
 
 extra:
   recipe-maintainers:
