@@ -1,7 +1,7 @@
 About ncephes
 =============
 
-Home: https://github.com/glimix/ncephes
+Home: https://github.com/limix/ncephes
 
 Package license: MIT
 
