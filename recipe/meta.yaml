@@ -1,6 +1,6 @@
 {% set name = "ncephes" %}
-{% set version = "1.0.33" %}
-{% set sha256 = "639ec8dd6c100d300b029d95a585af6f7a5b3d5bae81e5174d4e88ce578323fd" %}
+{% set version = "1.0.34" %}
+{% set sha256 = "35093e734f5ed10d6dab3d5444d7bb74cb02d0c0ba1f29b97f1576223367224c" %}
 
 package:
   name: {{ name|lower }}
