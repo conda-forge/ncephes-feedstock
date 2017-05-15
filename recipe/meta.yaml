@@ -1,6 +1,6 @@
 {% set name = "ncephes" %}
-{% set version = "1.0.22" %}
-{% set sha256 = "2a000344cd6f96cfcc80c9ed2ad45f8ef76f04d012c5dd9fbada8c4441145870" %}
+{% set version = "1.0.26" %}
+{% set sha256 = "8b627f2c8881b75f148f24acd3a2665568c7c6499ff16d8d961bf28fa81598f9" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win and py<35]
+  skip: True  # [win32 or linux32]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
