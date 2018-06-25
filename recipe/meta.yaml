@@ -18,13 +18,14 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
     - pytest-runner
     - build-capi
     - cffi >=1.7
     - pycparser
-    - toolchain
   run:
     - python
     - cffi >=1.7
