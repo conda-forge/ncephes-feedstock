@@ -1,6 +1,6 @@
 {% set name = "ncephes" %}
-{% set version = "1.0.40" %}
-{% set sha256 = "0ec665b003714117fd84f59af51361165f6ff58cc7822d31e07b1902ec1da9de" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "0a375e942e48fbdde28ec9c7a74f4fa6d3cbaea8ace3cc8cc3da5a6f3b2db9c2" %}
 
 package:
   name: {{ name|lower }}
@@ -13,22 +13,24 @@ source:
 
 build:
   number: 0
-  skip: True  # [win32 or linux32 or (win64 and py27)]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  skip: True  # [win and vc<14]
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - {{ compiler('c') }}
   host:
+    - pip
     - python
     - setuptools
     - pytest-runner
-    - build-capi
     - cffi >=1.7
-    - pycparser
+    - hcephes >=0.3.3
   run:
     - python
     - cffi >=1.7
+    - hcephes >=0.3.3
+    - numpy
 
 test:
   requires:
