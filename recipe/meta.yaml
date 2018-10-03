@@ -46,7 +46,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Python interface for the Cephes library'
+  summary: 'Python interface for the Netlib Cephes library'
   doc_url: https://ncephes.readthedocs.io
   dev_url: https://github.com/limix/ncephes
 
