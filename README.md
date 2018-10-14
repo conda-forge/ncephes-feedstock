@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Python interface for the Cephes library
+Summary: Python interface for the Netlib Cephes library
 
 
 
